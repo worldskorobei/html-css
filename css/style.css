@@ -44,6 +44,14 @@ header {
   fill: aqua;
   transition: all 0.3s ease 0.15s;
 }
+.logo:hover .logo__text {
+  color: #c7b29a;
+  transition: all 0.3s ease 0.15s;
+}
+.logo:active .logo__text {
+  color: aqua;
+  transition: all 0.3s ease 0.15s;
+}
 .logo__text {
   display: block;
   font-family: Raleway;
