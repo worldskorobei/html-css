@@ -40,6 +40,10 @@ header {
   fill: #c7b29a;
   transition: all 0.3s ease 0.15s;
 }
+.logo:active .logo__icon {
+  fill: aqua;
+  transition: all 0.3s ease 0.15s;
+}
 .logo__text {
   display: block;
   font-family: Raleway;
@@ -74,6 +78,10 @@ header {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
   text-align: left;
+  transition: all 0.3s ease 0.15s;
+}
+.menu__item:active {
+  color: aqua;
   transition: all 0.3s ease 0.15s;
 }
 .wrap-cart {
