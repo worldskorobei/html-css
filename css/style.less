@@ -1,0 +1,626 @@
+    @import "normalize.css";
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Raleway:400,500,600,700,800|Roboto');
+    @width-blocks: 1920px;
+    @width-product: 1170px;
+    @transition: all .3s ease .15s;
+    .container {
+        margin: 0 auto;
+        width: @width-blocks;
+    }
+    
+    header {
+        width: @width-blocks;
+        height: 1024px;
+        background-color: #9c7d57;
+        background: url(../img/bg_header.jpg);
+    }
+    
+    .logo {
+        display: flex;
+        width: 180px;
+        margin: 0 0 0 372px;
+        padding: 35px 0 0 0;
+        text-decoration: none;
+        float: left;
+        &-icon {
+            display: block;
+            fill: white;
+        }
+        &:hover .logo-icon {
+            fill: #c7b29a;
+            transition: @transition;
+        }
+        &-text {
+            margin: 11px 0 0 0;
+            display: block;
+            font-family: Raleway;
+            color: #ffffff;
+            font-size: 34px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+    
+    .menu {
+        display: block;
+        margin: 55px 0 0 229px;
+        width: 700px;
+        float: left;
+        &-item {
+            padding: 0 29px 0 0;
+            font-family: Montserrat;
+            color: #ffffff;
+            font-size: 14px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 300;
+            text-align: left;
+            text-decoration: none;
+            &:hover {
+                font-family: Montserrat;
+                color: #c7b29a;
+                font-size: 14px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                text-align: left;
+                transition: @transition;
+            }
+        }
+    }
+    
+    .cart {
+        display: block;
+        margin: 55px 0 0 33px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        &-icon {
+            fill: white;
+        }
+        &:hover .cart-icon {
+            fill: #c7b29a;
+            transition: @transition;
+        }
+    }
+    
+    .search {
+        display: block;
+        margin: 55px 0 0 20px;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        &-icon {
+            fill: white;
+        }
+        &:hover .search-icon {
+            fill: #c7b29a;
+            transition: @transition;
+        }
+    }
+    
+    .header-box {
+        margin: 251px 0 379.5px 0;
+        width: @width-blocks;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 3.5em;
+        &_one {
+            width: 480px;
+            display: block;
+            font-family: Raleway;
+            color: #ffffff;
+            font-size: 36px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 500;
+            text-align: center;
+        }
+        &_two {
+            display: block;
+            width: 589px;
+            font-family: Raleway;
+            color: #ffffff;
+            font-size: 52px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 700;
+            text-align: center;
+        }
+        &_three {
+            display: block;
+            width: 562px;
+            font-family: Montserrat;
+            color: #ffffff;
+            font-size: 16px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 300;
+            line-height: 24px;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+        }
+    }
+    
+    .social-link {
+        margin: 32px 0 0 0;
+        padding: 5px;
+        display: block;
+        border-radius: 3px;
+        background-color: #998675;
+        width: 170px;
+        height: 53px;
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 14px;
+        /* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 23px;
+        /* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 53px;
+        &:hover {
+            background-color: white;
+            color: #998675;
+            transition: @transition;
+        }
+        &:active {
+            background-color: white;
+            color: aqua;
+            transition: all .0s ease .0s;
+        }
+    }
+    
+    nav {
+        width: @width-blocks;
+        display: flex;
+        padding: 80px 376px 83px 378px;
+    }
+    
+    .nav-item {
+        padding: 0 34px 0 0;
+        width: 268px;
+        &-text-box {
+            display: block;
+            text-decoration: none;
+            &-icon {
+                display: block;
+                width: 44px;
+                height: 44px;
+                margin: 0 auto;
+                fill: #555555;
+            }
+            &-line {
+                display: block;
+                width: 70px;
+                margin: 0 auto;
+                fill: #f1eee9;
+            }
+            &:hover .nav-item-text-box-line {
+                fill: #c7b299;
+                transition: @transition;
+            }
+            &:hover .nav-item-text-box-icon {
+                fill: #c7b299;
+                transition: @transition;
+            }
+            &:hover .nav-item-text_one {
+                font-family: Raleway;
+                color: #c7b299;
+                font-size: 22px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 600;
+                text-align: center;
+                transition: @transition;
+            }
+        }
+        &-text_one {
+            padding-top: 29px;
+            display: block;
+            font-family: Raleway;
+            color: #555555;
+            font-size: 22px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 600;
+            text-align: center;
+        }
+        &-text_two {
+            padding-top: 19px;
+            display: block;
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 14px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 300;
+            line-height: 24px;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+        }
+    }
+    
+    article {
+        width: @width-blocks;
+        height: 700px;
+        background-color: #fbfaf8;
+    }
+    
+    .article-text {
+        padding: 75px 580px 40px 583px;
+        width: 757px;
+        &_one {
+            display: block;
+            font-family: Raleway;
+            color: #555555;
+            font-size: 30px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 600;
+            text-align: center;
+        }
+        &_two {
+            display: block;
+            padding: 24px 0 0 0;
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 16px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 300;
+            line-height: 28px;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+        }
+    }
+    
+    aside {
+        display: block;
+        background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
+        background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+        width: @width-blocks;
+        height: 150px;
+    }
+    
+    .aside {
+        &-text {
+            display: block;
+            padding: 48px 0 49px 376px;
+            float: left;
+            &_one {
+                font-family: Raleway;
+                color: #c7b299;
+                font-size: 28px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                text-align: left;
+            }
+            &_two {
+                font-family: Raleway;
+                color: #ffffff;
+                font-size: 28px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                text-align: left;
+            }
+            &_three {
+                display: block;
+                font-family: Montserrat;
+                color: #615855;
+                font-size: 18px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+    }
+    
+    .link-button {
+        margin: 50px 0 0 470px;
+        padding: 5px;
+        display: inline-block;
+        border-radius: 3px;
+        background-color: #998675;
+        min-width: 170px;
+        height: 50px;
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 14px;
+        /* Приближение из-за подстановки шрифтов */
+        font-weight: 700;
+        line-height: 23px;
+        /* Приближение из-за подстановки шрифтов */
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 53px;
+        &:hover {
+            background-color: white;
+            color: #998675;
+            transition: @transition;
+        }
+        &:active {
+            background-color: white;
+            color: aqua;
+            transition: all .0s ease .0s;
+        }
+    }
+    
+    .section-first {
+        width: @width-blocks;
+        height: 1200px;
+        &-text {
+            width: 757px;
+            display: block;
+            padding: 81px 0 40px 583px;
+            &_one {
+                display: block;
+                font-family: Raleway;
+                color: #555555;
+                font-size: 30px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 600;
+                text-align: center;
+            }
+            &_two {
+                padding: 24px 0 0 0;
+                display: block;
+                font-family: Montserrat;
+                color: #8c8c8c;
+                font-size: 16px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 28px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: center;
+            }
+        }
+    }
+    
+    .section-menu {
+        width: @width-blocks;
+        padding: 40px 0 40px 558px;
+        &-item {
+            display: inline-block;
+            margin: 0 53px 0 0;
+            padding: 10px;
+            min-width: 120px;
+            height: 32px;
+            outline: 1px solid #ebebeb;
+            background-color: rgba(17, 17, 17, 0);
+            border-radius: 3px;
+            text-decoration: none;
+            font-family: Montserrat;
+            color: #8c8c8c;
+            font-size: 14px;
+            /* Приближение из-за подстановки шрифтов */
+            font-weight: 300;
+            line-height: 21px;
+            /* Приближение из-за подстановки шрифтов */
+            text-align: center;
+            line-height: 32px;
+            &:first-child {
+                width: 70px;
+            }
+            &:hover {
+                color: #ffffff;
+                background-color: #998675;
+                transition: @transition;
+            }
+        }
+    }
+    
+    .all-products {
+        margin: 0 0 0 376px;
+    }
+    
+    .product {
+        display: inline-block;
+        margin: 0 30px 30px 0;
+        width: 370px;
+        position: relative;
+        &:after {
+            top: -135px;
+            left: 19px;
+            content: "";
+            position: relative;
+            border: 20px solid transparent;
+            border-bottom: 20px solid #fbfaf8;
+        }
+        &-img {
+            background-color: #c7b29a;
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            -ms-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        &-svg {
+            position: absolute;
+            &_one {
+                position: relative;
+                left: 134px;
+                top: -105px;
+                width: 26px;
+                height: 26px;
+                fill: green;
+                opacity: 0;
+            }
+            &_two {
+                position: relative;
+                left: 188px;
+                top: -105px;
+                width: 26px;
+                height: 25px;
+                fill: green;
+                opacity: 0;
+                &:hover {
+                    fill: #c7b299;
+                    opacity: 1;
+                }
+            }
+        }
+        &:hover {
+            background-color: #362f2d;
+            transition: @transition;
+        }
+        &:hover .product-text {
+            background-color: #362f2d;
+            transition: @transition;
+        }
+        &:hover:after {
+            border-bottom-color: #362f2d;
+            transition: @transition;
+        }
+        &:hover .product-img {
+            opacity: 0.8;
+            filter: alpha(opacity=50);
+            transition: @transition;
+        }
+        &:hover .product-svg_one {
+            transition: @transition;
+            fill: #ffffff;
+            opacity: 1;
+        }
+        &:hover .product-svg_two {
+            transition: @transition;
+            fill: #ffffff;
+            opacity: 1;
+        }
+        .product-svg-link_one {
+            &:hover .product-svg_one {
+                fill: #c7b299;
+                opacity: 1;
+            }
+            &:active .product-svg_one {
+                fill: aqua;
+                opacity: 1;
+            }
+        }
+        .product-svg-link_two {
+            &:hover .product-svg_two {
+                fill: #c7b299;
+                opacity: 1;
+            }
+            &:active .product-svg_two {
+                fill: aqua;
+                opacity: 1;
+            }
+        }
+        &-text {
+            padding: 28px;
+            background-color: #fbfaf8;
+            &_one {
+                display: block;
+                font-family: Raleway;
+                color: #c7b29a;
+                font-size: 20px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 500;
+                text-align: left;
+            }
+            &_two {
+                display: block;
+                font-family: Montserrat;
+                color: #d1d1d1;
+                font-size: 14px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 20px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: left;
+            }
+        }
+    }
+    
+    .section-first-button {
+        display: block;
+        margin: 0 auto;
+        width: 170px;
+    }
+    
+    .section-second {
+        margin: 80px 0 0 0;
+        display: block;
+        width: @width-blocks;
+        height: 705px;
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 705px;
+            &_one {
+                font-family: Raleway;
+                color: #ccc;
+                font-size: 30px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 500;
+                text-align: center;
+            }
+            &_two {
+                width: 552px;
+                font-family: Montserrat;
+                color: #ccc;
+                font-size: 16px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 28px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: center;
+            }
+            &_three {
+                font-family: Montserrat;
+                color: #c7b299;
+                font-size: 14px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 400;
+                line-height: 24px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: center;
+            }
+        }
+    }
+    
+    .section-third {
+        background-color: #fbfaf8;
+        width: @width-blocks;
+        height: 695px;
+        &-text {
+            width: 1074px;
+            float: right;
+            &:before {
+                content: "";
+            }
+            &_one {
+                display: block;
+                font-family: Raleway;
+                color: #555555;
+                font-size: 30px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 600;
+                text-align: left;
+            }
+            &_two {
+                display: block;
+                width: 552px;
+                font-family: Montserrat;
+                color: #ccc;
+                font-size: 16px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 28px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: center;
+            }
+            &-list {
+                font-family: Montserrat;
+                color: #8c8c8c;
+                font-size: 16px;
+                /* Приближение из-за подстановки шрифтов */
+                font-weight: 300;
+                line-height: 32px;
+                /* Приближение из-за подстановки шрифтов */
+                text-align: left;
+            }
+        }
+    }
