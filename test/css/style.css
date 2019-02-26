@@ -42,7 +42,7 @@ header {
 }
 .logo:active .logo__icon {
   fill: aqua;
-  transition: all 0.3s ease 0.15s;
+  transition: color 0s, fill 0s ease 0s;
 }
 .logo:hover .logo__text {
   color: #c7b29a;
@@ -50,7 +50,7 @@ header {
 }
 .logo:active .logo__text {
   color: aqua;
-  transition: all 0.3s ease 0.15s;
+  transition: color 0s, fill 0s ease 0s;
 }
 .logo__text {
   display: block;
@@ -90,7 +90,7 @@ header {
 }
 .menu__item:active {
   color: aqua;
-  transition: all 0.3s ease 0.15s;
+  transition: color 0s, fill 0s ease 0s;
 }
 .wrap-cart {
   margin: 0 0 0 1100px;
@@ -107,6 +107,10 @@ header {
 .cart:hover .cart__icon {
   fill: #c7b29a;
   transition: all 0.3s ease 0.15s;
+}
+.cart:active .cart__icon {
+  fill: aqua;
+  transition: color 0s, fill 0s ease 0s;
 }
 .search {
   margin: 0 0 0 20px;
@@ -190,21 +194,21 @@ input[type="search"]:focus {
   justify-content: space-between;
   align-items: center;
 }
-.header-second__arrow-left {
+.header-second__arrow-previous {
   fill: #ffffff;
   width: 40px;
   height: 73px;
 }
-.header-second__arrow-left:hover {
+.header-second__arrow-previous:hover {
   fill: #d3c1ad;
   transition: all 0.3s ease 0.15s;
 }
-.header-second__arrow-right {
+.header-second__arrow-next {
   fill: #ffffff;
   width: 40px;
   height: 73px;
 }
-.header-second__arrow-right:hover {
+.header-second__arrow-next:hover {
   fill: #d3c1ad;
   transition: all 0.3s ease 0.15s;
 }
@@ -381,20 +385,17 @@ input[type="search"]:focus {
   background-repeat: no-repeat;
   background-position: center, left bottom, right bottom;
 }
-aside {
-  display: block;
+.wrap-aside {
+  display: flex;
+  padding: 0 404px 0 406px;
+  justify-content: space-between;
+  align-items: center;
   background: -webkit-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: -moz-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: -o-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: -ms-linear-gradient(0deg, #211b19 0%, #4e3427 100%);
   background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
-  width: 1920px;
   height: 150px;
-}
-.wrap-aside {
-  display: block;
-  padding: 48px 0 49px 376px;
-  float: left;
 }
 .aside-text__one {
   font-family: Raleway;
@@ -420,10 +421,6 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 300;
   text-align: left;
-}
-.wrap-aside-link {
-  display: inline-block;
-  margin: 50px 0 0 470px;
 }
 .section-first {
   width: 1920px;
@@ -503,6 +500,7 @@ aside {
   transition: all 0.3s ease 0.15s;
 }
 .product__svg_one:active {
+  transition: color 0s, fill 0s ease 0s;
   fill: aqua;
 }
 .product__svg_two {
@@ -519,6 +517,7 @@ aside {
   transition: all 0.3s ease 0.15s;
 }
 .product__svg_two:active {
+  transition: color 0s, fill 0s ease 0s;
   fill: aqua;
 }
 .product:hover .product__svg_one {
@@ -593,12 +592,30 @@ aside {
   height: 705px;
   position: relative;
 }
+.wrap-section-second-text {
+  position: absolute;
+  z-index: 3;
+}
+.icon-play {
+  fill: white;
+  margin: 0 0 5px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+}
+.icon-play:hover {
+  fill: #998675;
+  transition: all 0.3s ease 0.15s;
+}
+.video-play-btn_hide {
+  display: none;
+  z-index: 0;
+}
 .vid {
-  width: 100%;
-  float: left;
+  position: relative;
+  z-index: 2;
 }
 .section-second-text {
-  position: absolute;
   height: 705px;
   width: 1920px;
   display: flex;
@@ -641,24 +658,24 @@ aside {
   width: 1920px;
   height: 695px;
 }
-.wrap-section-third-left {
+.wrap-section-third-one {
   margin: 79px 0 0 423px;
 }
-.section-third-left {
+.section-third-one {
   width: 423px;
   height: 616px;
   background: url(../img/iPhone_in_hand.png);
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-.wrap-section-third-right {
+.wrap-section-third-two {
   margin: 195px 0 0 31px;
 }
-.section-third-right {
+.section-third-two {
   width: 657px;
   overflow: hidden;
 }
-.section-third-right__text-one {
+.section-third-two__text-one {
   display: block;
   font-family: Raleway;
   color: #555555;
@@ -667,7 +684,7 @@ aside {
   font-weight: 600;
   text-align: left;
 }
-.section-third-right__text-two {
+.section-third-two__text-two {
   display: block;
   padding: 40px 0 0 2px;
   font-family: Montserrat;
@@ -679,7 +696,7 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
-.section-third-right-list {
+.section-third-two-list {
   padding: 0;
   margin: 45px 0 0 100px;
   position: relative;
@@ -693,10 +710,10 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
-.section-third-right-list__item {
+.section-third-two-list__item {
   position: relative;
 }
-.section-third-right-list__item:before {
+.section-third-two-list__item:before {
   background: url(../img/list_icon.png);
   top: 4.55px;
   left: -39px;
@@ -756,10 +773,10 @@ aside {
   fill: #ffffff;
 }
 .recent-posts {
-  margin: 0 374px 40px 376px;
+  margin: 0 374px 20px 376px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .box-posts {
   position: relative;
@@ -794,6 +811,7 @@ aside {
   display: block;
   position: relative;
   font-family: Montserrat;
+  text-decoration: none;
   max-width: 297px;
   color: #c7b299;
   font-size: 14px;
@@ -812,6 +830,14 @@ aside {
   margin-left: 9px;
   background: url(../img/arrow.png);
   background-repeat: no-repeat;
+}
+.box-posts__link:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease 0.15s;
+}
+.box-posts__link:active {
+  text-decoration-color: aqua;
+  transition: color 0s, fill 0s ease 0s;
 }
 .box-posts:hover {
   background-color: #362f2d;
@@ -876,6 +902,36 @@ aside {
   border-bottom-right-radius: 3px;
   background-color: #252525;
 }
+.wrap-selector-recent-posts {
+  margin: 0 374px 40px 376px;
+}
+.selector-recent-posts {
+  display: flex;
+  justify-content: center;
+  fill: #8c8c8c;
+}
+.selector-recent-posts__previous {
+  margin: 4px;
+}
+.selector-recent-posts__previous:hover {
+  fill: #c7b299;
+  transition: all 0.3s ease 0.15s;
+}
+.selector-recent-posts__previous:active {
+  fill: aqua;
+  transition: color 0s, fill 0s ease 0s;
+}
+.selector-recent-posts__next {
+  margin: 4px;
+}
+.selector-recent-posts__next:hover {
+  fill: #c7b299;
+  transition: all 0.3s ease 0.15s;
+}
+.selector-recent-posts__next:active {
+  fill: aqua;
+  transition: color 0s, fill 0s ease 0s;
+}
 .project-links {
   height: 489px;
   width: 1920px;
@@ -925,6 +981,7 @@ aside {
   margin: 23px 0 81px 0;
   display: block;
   position: relative;
+  text-decoration: none;
   font-family: Montserrat;
   max-width: 297px;
   color: #c7b299;
@@ -944,6 +1001,14 @@ aside {
   margin-left: 9px;
   background: url(../img/arrow.png);
   background-repeat: no-repeat;
+}
+.contacts-box__link:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease 0.15s;
+}
+.contacts-box__link:active {
+  text-decoration-color: aqua;
+  transition: color 0s, fill 0s ease 0s;
 }
 .contacts-box__caption {
   margin: 17px 0 30px 0;
@@ -1032,7 +1097,7 @@ aside {
   justify-content: space-between;
   align-items: center;
 }
-.copyright-left__text-one {
+.copyright-one__text-one {
   font-family: Montserrat;
   color: #545454;
   font-size: 13px;
@@ -1042,7 +1107,7 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
-.copyright-left__text-two {
+.copyright-one__text-two {
   margin: 0 10px 0 0;
   /* Встроенный стиль */
   font-family: Montserrat;
@@ -1054,7 +1119,7 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
-.copyright-left__link {
+.copyright-one__link {
   padding: 0 10px 0 10px;
   font-family: Montserrat;
   color: #545454;
@@ -1066,15 +1131,14 @@ aside {
   text-align: center;
   border-left: 2px solid #242424;
 }
-.copyright-left__link:hover {
+.copyright-one__link:hover {
   color: #c7b299;
   transition: all 0.3s ease 0.15s;
 }
-.copyright-right {
-  float: left;
+.copyright-two {
   max-width: 400px;
 }
-.copyright-right__text-one {
+.copyright-two__text-one {
   margin: 0 0 0 20px;
   font-family: Montserrat;
   color: #545454;
@@ -1085,7 +1149,7 @@ aside {
   /* Приближение из-за подстановки шрифтов */
   text-align: right;
 }
-.copyright-right__text-two {
+.copyright-two__text-two {
   font-family: Montserrat;
   color: #959595;
   font-size: 13px;
@@ -1134,5 +1198,5 @@ aside {
 }
 .social-link:active .social-link__text {
   color: aqua;
-  transition: all 0.3s ease 0.15s;
+  transition: color 0s, fill 0s ease 0s;
 }
