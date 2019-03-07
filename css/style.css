@@ -1247,7 +1247,7 @@ input[type="checkbox"]:checked ~ .menu {
   color: aqua;
   transition: color 0s, fill 0s ease 0s;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 593px) {
   * {
     margin: 0;
     padding: 0;
@@ -1358,6 +1358,16 @@ input[type="checkbox"]:checked ~ .menu {
     font-size: 24px;
   }
   .demonstration {
+    display: none;
+  }
+  .wrap-cart {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  .wrap-search {
+    margin: 0;
+    padding: 0;
     display: none;
   }
   .headline {
@@ -1529,15 +1539,13 @@ input[type="checkbox"]:checked ~ .menu {
   .contacts {
     display: none;
   }
-  .wrap-copyright {
-    padding: 0;
-  }
   .copyright {
     background-color: #111111;
     width: 576px;
     height: 111px;
   }
   .wrap-copyright {
+    padding: 0;
     height: 111px;
     margin: 0 10px;
     flex-wrap: wrap;
